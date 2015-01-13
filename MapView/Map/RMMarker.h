@@ -42,7 +42,17 @@ typedef enum : NSUInteger {
     UIView  *label;
     UIColor *textForegroundColor;
     UIColor *textBackgroundColor;
+    UIView *contentView;
+    UIViewController *contentViewController;
 }
+
+/** @name Custom "content" controller */
+/** Custom "content" controller for custom view */
+@property (nonatomic, strong) UIViewController *contentViewController;
+
+/** @name Custom "content" view */
+/** Custom "content" view that can be any width/height. If this is set, title/subtitle/titleView/subtitleView are all ignored. */
+@property (nonatomic, strong) UIView *contentView;
 
 /** @name Setting Label Properties */
 
